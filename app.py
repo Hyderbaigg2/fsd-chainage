@@ -28,7 +28,7 @@ st.title("🚉 Chainage-Maker Online")
 # --- ADDING THE DESCRIPTIVE IMAGE HERE ---
 
 st.markdown("Generate track-accurate chainage from **Fog Safety Device** CSV file.")
-st.markdown("Developed by SPM Cell Hyderabad Division - SCR")
+st.markdown("Developed by **SPM Cell Hyderabad Division - SCR**")
 
 uploaded_file = st.file_uploader("Upload Fog Device CSV", type="csv")
 
