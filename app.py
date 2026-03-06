@@ -25,9 +25,9 @@ def get_utm_crs(lon):
 
 st.set_page_config(page_title="Chainage-Maker Online", page_icon="🚉")
 st.title("🚉 Chainage-Maker Online")
-st.markdown("Generate track-accurate chainage from **Fog Safety Device** CSV logs.")
+st.markdown("Generate track-accurate chainage from **Fog Safety Device** CSV file.")
 
-uploaded_file = st.file_uploader("Upload Fog Device CSV (Columns C, F, G)", type="csv")
+uploaded_file = st.file_uploader("Upload Fog Device CSV", type="csv")
 
 if uploaded_file:
     # Load and Preprocess
