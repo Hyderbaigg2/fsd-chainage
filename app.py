@@ -31,11 +31,6 @@ st.markdown("Generate track-accurate chainage from **Fog Safety Device** CSV fil
 
 uploaded_file = st.file_uploader("Upload Fog Device CSV", type="csv")
 
-st.image("track_curvature.png", 
-         caption="Linear Referencing: Why we calculate distance along the track path (10.4km) vs. straight line (8.8km).",
-         use_container_width=True)
-
-
 if uploaded_file:
     # Load and Preprocess
     raw_df = pd.read_csv(uploaded_file, header=None, usecols=[2, 5, 6])
@@ -91,6 +86,9 @@ if uploaded_file:
             temp_df['distance'] = distances
             temp_df['cumulative'] = cumulative
             table_placeholder.dataframe(temp_df)
+st.image("track_curvature.png", 
+         caption="Linear Referencing: Why we calculate distance along the track path (10.4km) vs. straight line (8.8km).",
+         use_container_width=True)
 
         # Final Download
         df['distance'], df['cumulative'], df['track_offset_dist'] = distances, cumulative, offsets
