@@ -25,6 +25,11 @@ def get_utm_crs(lon):
 
 st.set_page_config(page_title="Chainage-Maker Online", page_icon="🚉")
 st.title("🚉 Chainage-Maker Online")
+# --- ADDING THE DESCRIPTIVE IMAGE HERE ---
+st.image("track_curvature.png", 
+         caption="Linear Referencing: Why we calculate distance along the track path (10.4km) vs. straight line (8.8km).",
+         use_container_width=True)
+
 st.markdown("Generate track-accurate chainage from **Fog Safety Device** CSV file.")
 
 uploaded_file = st.file_uploader("Upload Fog Device CSV", type="csv")
