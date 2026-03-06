@@ -2,7 +2,7 @@
 
 **Chainage-Maker Online** is an open-source, browser-based tool designed to help Railway Signaling Engineers and Crew Management teams convert raw GPS data from **Fog Safety Devices** into precise, track-following chainage.
 
-
+![Comparison of Straight Line vs Track Distance](track_curvature.png)
 
 ## 🚀 Features
 * **Track-Aware Distance:** Uses real-world railway geometry to account for track curvature, not just straight-line distance.
